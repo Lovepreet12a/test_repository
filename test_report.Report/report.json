@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a1e9973db5f3f010c17c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":663.3434650455928,\"y\":116.71732522796353,\"z\":0,\"width\":616.6565349544073,\"height\":603.0395136778116,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Employees.Country\"},{\"queryRef\":\"Employees.City\"},{\"queryRef\":\"Employees.FirstName\"},{\"queryRef\":\"Customers.CompanyName\"},{\"queryRef\":\"Orders.ShipCountry\"},{\"queryRef\":\"Orders.ShipCity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Customers\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"Orders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Country\"},\"Name\":\"Employees.Country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"City\"},\"Name\":\"Employees.City\",\"NativeReferenceName\":\"City\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"FirstName\"},\"Name\":\"Employees.FirstName\",\"NativeReferenceName\":\"FirstName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CompanyName\"},\"Name\":\"Customers.CompanyName\",\"NativeReferenceName\":\"CompanyName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"ShipCountry\"},\"Name\":\"Orders.ShipCountry\",\"NativeReferenceName\":\"ShipCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"ShipCity\"},\"Name\":\"Orders.ShipCity\",\"NativeReferenceName\":\"ShipCity\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 603.04,
+          "width": 616.66,
+          "x": 663.34,
+          "y": 116.72,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b608f8c5d789a3fe92b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":1280,\"height\":87.53799392097265,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"TEST REPORT\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 87.54,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e5e1fc12ff2e030a94b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":116.71732522796353,\"z\":1000,\"width\":640,\"height\":603.0395136778116,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Employees.Country\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Employees.FirstName)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Country\"},\"Name\":\"Employees.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"FirstName\"}},\"Function\":5},\"Name\":\"CountNonNull(Employees.FirstName)\",\"NativeReferenceName\":\"Count of FirstName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"FirstName\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 603.04,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 116.72,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
